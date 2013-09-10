@@ -1,0 +1,19 @@
+<div class="container">
+
+<h1>Enter a tweet</h1>
+
+
+<form id="tweet_form" action='/search' method="GET">
+  <label>User Name: <input type="text" name="tweet" placeholder='tweet'></label>
+  <input type="submit" value="Submit">
+</form>
+
+<% if @tweet %>
+  <p><%= @tweet %></p>
+<% else %>
+  <p id="res"></p>
+<% end %>
+
+
+
+</div>
